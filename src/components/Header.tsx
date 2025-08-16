@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Wrench } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Wrench, Clock, Shield } from "lucide-react";
 
 const Header = () => {
   return (
@@ -14,18 +13,15 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-            About
-          </Link>
-          <Link to="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-            Services
-          </Link>
-          <Link to="/for-workers" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+            How it Works
+          </a>
+          <a href="#for-workers" className="text-muted-foreground hover:text-foreground transition-colors">
             For Workers
-          </Link>
-          <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-            Contact
-          </Link>
+          </a>
+          <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            Pricing
+          </a>
         </nav>
 
         <div className="flex items-center space-x-3">
